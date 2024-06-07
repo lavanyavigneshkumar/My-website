@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card components</title>
+</head>
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  .container-fluid{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(rgb(223, 110, 110))) url(images/bg.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+     .container{
+      width: 100%;
+      height: 100vh;
+      background-color: white
+     }
+     
+
+</style>
+<body>
+    <div>
+
+    </div>
+<div class="container-fluid col-md-8">
+    <div class="container col-md-10">
+        <!-- navbar section-->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+           
+              <a class="navbar-brand" href="#">home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                    
+ 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" </a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            
+          </nav>
+<body>
+    <div class="flexbox1">
+        <div class="card" style="width: 18rem;">
+            <img src="./assests/03934-Grinder.jpg" class="card-img-top" alt="..." width="300px">
+            <div class="card-body">
+              <h5 class="card-title">Grinder</h5>
+              <p class="card-text">Premier smart 200 watts wet grinder 2 litre 230v pg-512 with coconut scrapper and dough kneader attachment,plastic.</p>
+              <p class="card-text"><small class="text-muted">Best price $2700 (inclusive of all taxes)</small></p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assests/fridge sample jpg.jpg" class="card-img-top" alt="..." width="300px">
+            <div class="card-body">
+              <h5 class="card-title">Refrigerator</h5>
+              <p class="card-text">Samsung French Door with famiuly hub 810IRF28n9780</p>
+              <p class="card-text"><small class="text-muted">Buying options $2,93,810 free delivery</small></p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assests/mobile-banner-sharp-MG.png" class="card-img-top" alt="..." width="300px">
+            <div class="card-body">
+              <h5 class="card-title">Kent Mixer</h5>
+              <p class="card-text">Get Ready to finely masalas,make tangy chutneys,and chop veggies in a jiffy with the powerful and reliable kent sharp mixer.</p>
+              <p class="card-text"><small class="text-muted">Best price $2700 (inclusive of all taxes)</small></p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+    </div>
+    
+</body>
+    
+
+  <body>
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
