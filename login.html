@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Turf - Turf Booking Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #90ee90;
+        }
+
+        .hero {
+            background: #013220;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #013220;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #013220;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .form-group input[type="date"] {
+            padding: 9px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #013220;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #045c40;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .payment-option {
+            background-color: #013220;
+            color: white;
+            padding: 4px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            width: 30%;
+            transition: background-color 0.3s;
+        }
+
+        .payment-option:hover {
+            background-color: #045c40;
+        }
+
+        footer {
+            background-color: #013220;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function submitBooking() {
+            alert('Your booking has been confirmed!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Turf Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\elcot\Desktop\project 21st\index.html">Home</a></li> 
+                
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="hero">Book Your Turf Now</div>
+
+    <div class="container">
+        <h2>Book Your Turf</h2>
+        <form id="booking-form" onsubmit="submitBooking(); return false;">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="members">Number of Members</label>
+                <input type="number" id="members" name="members" required placeholder="Enter number of members">
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required placeholder="Enter your contact number">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email ID">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Booking Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Booking Time Slot</label>
+                <select id="time" name="time" required>
+                    <option value="1pm-2pm">1 PM - 2 PM</option>
+                    <option value="2pm-3pm">2 PM - 3 PM</option>
+                    <option value="3pm-4pm">3 PM - 4 PM</option>
+                    <option value="4pm-5pm">4 PM - 5 PM</option>
+                    <option value="5pm-6pm">5 PM - 6 PM</option>
+                    <option value="6pm-7pm">6 PM - 7 PM</option>
+                    <option value="1pm-2pm">1 AM - 2 AM</option>
+                    <option value="2pm-3pm">2 AM - 3 AM</option>
+                    <option value="3pm-4pm">3 AM - 4 AM</option>
+                    <option value="4pm-5pm">4 AM - 5 AM</option>
+                    <option value="5pm-6pm">5 AM - 6 AM</option>
+                    <option value="6pm-7pm">6 AM - 7 AM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Booking</button>
+            </div>
+        </form>
+
+        <h2>Payment Options</h2>
+        <div class="payment-options">
+            <div class="payment-option" onclick="alert('UPI Payment method selected!')">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Pay via UPI</p>
+            </div>
+            <div class="payment-option" onclick="alert('Card Payment method selected!')">
+                <i class="fas fa-credit-card"></i>
+                <p>Pay via Card</p>
+            </div>
+            <div class="payment-option" onclick="alert('Cash Payment method selected!')">
+                <i class="fas fa-money-bill"></i>
+                <p>Pay on Cash</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Turf Booking. All Rights Reserved.
+    </footer>
+</body>
+</html>
